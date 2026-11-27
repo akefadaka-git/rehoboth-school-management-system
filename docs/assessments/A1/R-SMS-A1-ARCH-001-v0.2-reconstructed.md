@@ -4,38 +4,37 @@
 **Date:** 27 November 2026  
 **Institution:** Koybe Rehoboth Academy, Koybe, South Omo, Ethiopia  
 **Status:** A1 OPEN / IN PROGRESS — NOT APPROVED OR FROZEN  
-**Provenance:** This is a structured reconstruction, not a verbatim recovery. See [RECONSTRUCTION-NOTE.md](RECONSTRUCTION-NOTE.md).
+**Provenance:** This is a structured reconstruction, not a verbatim recovery. See [RECONSTRUCTION-NOTE.md](RECONSTRUCTION-NOTE.md).  
+**Requirements companion:** [A1 Preliminary Requirements Register v0.1](../../requirements/A1-REQUIREMENTS-REGISTER-v0.1.md).
 
 ## 1. Executive summary
-R-SMS is proposed as a full School Management ERP for Koybe Rehoboth Academy. It is intended to improve manual/paper-based school administration through an integrated, secure, Amharic-first, mobile-responsive platform. Planning enrollment range: approximately 100–300 students. Proposed direction: modular monolith with API-first boundaries. Technology stack remains TBD.
+R-SMS is proposed as a full School Management ERP for Koybe Rehoboth Academy. It is intended to improve manual/paper-based school administration through an integrated, secure, Amharic-first, mobile-responsive platform. Planning enrollment range: approximately 100–300 students; this is an unverified planning estimate, not a measured count. Proposed direction: modular monolith with API-first boundaries. Technology stack remains TBD.
 
 ## 2. Project charter and scope
-Initial institution: Koybe Rehoboth Academy. Scope: full school ERP. Proposed access: web and mobile-responsive. Language: Amharic-first with English. Initial currency: ETB. Ethiopian and Gregorian calendar support to be assessed. Architecture should allow future multi-school expansion. Offline-tolerant workflows should be assessed. No implementation, migrations, production import, hosting/deployment, expenditure or paid-service commitment is included in this A1 activity.
+Initial institution: Koybe Rehoboth Academy. Scope: full school ERP. Proposed access: web and mobile-responsive. Language: Amharic-first with English. Initial currency: ETB. Ethiopian and Gregorian calendar support to be assessed. Architecture should allow future multi-school expansion, but the first deployment scope is the named academy unless separately approved. Offline-tolerant workflows should be assessed.
+
+Excluded from this A1 activity: application implementation, migrations, production data import, hosting/deployment, expenditure, paid-service commitment and operational use. The public repository must contain documentation only and must not contain real student, parent, staff, credential, account or confidential operational data.
 
 ## 3. Institutional assessment
 **OWNER DECISION (27 Nov 2026):** Koibe Kale Hiwot Church owns and operates the academy. Official registration, governing instruments, ownership records and delegated authority documents remain to be collected. Current operations are described as manual/paper-based. Map actual forms, registers, approval records and retention practices before automation. Enrollment range is a planning estimate, not a verified count. Organizational chart and authority matrix remain unresolved.
+
+The system must distinguish institutional ownership, school operation, governance, delegated approval authority and technical administration. The legal and operational relationship must be confirmed from authoritative documents before production configuration. Candidate stakeholders and responsibilities are listed in the requirements register; they are not an approved organization chart.
 
 ## 4. Academic assessment
 **OWNER DECISION:** Academy offers Kindergarten and Grades 1–6.  
 **OWNER DECISION:** Academic year has two semesters.  
 Unresolved: KG naming, grade conventions, sections, class-size limits, subjects, semester dates, calendar rules, exam/reporting periods, grading scale, assessment weights, pass marks, promotion/repetition, transfer and withdrawal policies.
 
-Proposed capabilities: admission/enrollment/re-enrollment; grade/section assignment; curriculum/subject setup; semester records; attendance and discipline; assessments/exams/marks/report cards; transfer and historical record retention. Promotion rules must be configurable; no automatic promotion without authorized approval and audit record.
+Proposed capabilities: admission/enrollment/re-enrollment; grade/section assignment; curriculum/subject setup; semester records; attendance and discipline; assessments/exams/marks/report cards; transfer and historical record retention. Promotion rules must be configurable; no automatic promotion without authorized approval and audit record. Detailed candidate requirements and acceptance criteria are in the companion requirements register.
 
 ## 5. Financial assessment
 **OWNER DECISION:** School fees are currently collected in cash only. Initial workflow should support fee schedules, student billing, cash receipts, collection register, cashier accountability, daily cash reconciliation and auditable adjustments. This does not approve future digital payments.
 
-**OWNER DECISION:** Budget and major expenses use a shared approval policy. Roles, thresholds, categories, request/review/approval/payment workflow, escalation, emergency exceptions and segregation-of-duties rules remain unresolved.
+**OWNER DECISION:** Budget and major expenses use a shared approval policy. Roles, thresholds, categories, request/review/approval/payment workflow, escalation, emergency exceptions and segregation-of-duties rules remain unresolved. Do not infer approval authority from job titles or technical permissions.
 
 Proposed capabilities: billing, fee schedules, scholarships/waivers, cash receipts, cashier sessions/cash custody, daily reconciliation, expense requests/approvals, budgets, accounting and payroll capability subject to confirmed requirements. Controls: unique receipt numbers, cashier identity, transaction references, duplicate detection, reversal/refund controls and audit history. Never silently edit/delete financial transactions; use controlled reversals/adjustments.
 
-Historical planning figures in earlier context (unverified; not current operating expenses, approved budget, payroll, tuition or balances):
-| Category | ETB |
-|---|---:|
-| Teacher salaries/support | 517,690 |
-| Books | 343,200 |
-| Educational materials | 150,000 |
-| **Total** | **1,010,890** |
+Historical budget/planning figures mentioned in earlier project context are intentionally excluded from this public reconstruction. Their source, date, meaning, accuracy and authorization for public disclosure have not been independently established. They must not be treated as current expenses, approved budget, payroll, tuition or account balances. If needed, reconcile them through an appropriately restricted evidence process rather than publishing them here.
 
 ## 6. Proposed ERP domain catalogue
 Proposal, not frozen requirements:
@@ -56,25 +55,41 @@ Proposal, not frozen requirements:
 15. Identity and Security
 16. Configuration and Integration
 
-## 7. Proposed technical architecture
-Modular monolith with API-first boundaries is the proposed initial style, subject to approval. Final language, framework, database, hosting, deployment and mobile/PWA choices remain TBD. Assess local maintainability, available skills, affordability, security lifecycle, backup/recovery, Amharic/Ethiopian calendar support, intermittent connectivity, portability and future scale. Avoid microservices unless evidence justifies the operational overhead.
+Each domain requires scope boundaries, actors, records, workflows, interfaces and acceptance criteria. The catalogue is not an approved implementation decomposition.
 
-Logical layers: responsive presentation; application/API (auth, authorization, validation, workflow); domain modules; relational persistence and controlled document storage; integrations only when approved. Offline queue/cache/sync and conflict handling require assessment; offline mode must not bypass authorization, audit or financial controls.
+## 7. Proposed technical architecture
+Modular monolith with API-first boundaries is the proposed initial style, subject to approval. Final language, framework, database, hosting, deployment and mobile/PWA choices remain TBD. A documented options assessment must compare local skills and maintainability, lifecycle/security support, affordability and total operating cost, hosting constraints, backup/recovery, Amharic/Ethiopian calendar support, intermittent connectivity, portability and future scale. Avoid microservices unless evidence justifies the operational overhead.
+
+Logical layers proposed for evaluation:
+- Presentation: responsive web interface, localization and accessible interaction.
+- Application/API: authentication, authorization, validation, workflow orchestration and reporting endpoints.
+- Domain: bounded school capabilities with explicit ownership of business rules.
+- Persistence: relational data with integrity constraints, migrations and controlled document storage.
+- Operations: logs, audit, backup, restore, monitoring and support procedures.
+- Integration: external interfaces only after need, authority, security and cost are assessed.
+
+Offline queue/cache/sync and conflict handling require a use-case assessment. Offline mode must not bypass authorization, audit or financial controls. No deployment topology or technology has been selected.
 
 ## 8. Data architecture
-Use stable internal student identifiers; preserve historical enrollment, class assignments, attendance and results; distinguish people, student records, guardians, staff and organizational units; enforce referential integrity and controlled status transitions; retain audit history; define document classification, retention, backup and access rules; minimize personal data. A2 should inventory actual paper forms/registers. Do not publish real student or staff data in this public repository.
+Use stable internal student identifiers; preserve historical enrollment, class assignments, attendance and results; distinguish people, student records, guardians, staff and organizational units; enforce referential integrity and controlled status transitions; retain audit history; define document classification, retention, backup and access rules; minimize personal data. A2 should inventory actual paper forms/registers and reconcile required data fields, sources, custodians, access and retention.
+
+A conceptual entity inventory should include institution/organizational unit, person, student, guardian relationship, staff, academic year, semester, grade, section, subject, enrollment, attendance, assessment, result, fee item, student charge, cash receipt, cashier session, expense request, approval, budget, document and audit event. This is a discovery inventory, not a frozen schema. Cardinalities, identifiers, history strategy, data quality, retention and reporting definitions remain to be designed and validated.
 
 ## 9. Identity, access and security
 Proposed RBAC scoped by role, institution, class, student/guardian relationship and responsibility. Technical administration does not confer financial approval authority. Assess secure authentication/session management, least privilege, encryption in transit and at rest as appropriate, restricted child-data access, audit logs, secrets management, backup/restore testing, vulnerability/dependency management, incident response and access revocation. These are requirements to assess, not implemented controls.
 
+A threat/risk assessment must cover account compromise, privilege escalation, insider misuse, child-data exposure, financial fraud, receipt manipulation, unauthorized exports, lost devices, insecure backups and service interruption. Specify threat actors, trust boundaries, preventive/detective controls, residual risk and test evidence before A1 approval.
+
 ## 10. Localization and accessibility
-Amharic-first with English support; Ethiopian and Gregorian calendar support; ETB initial base currency; local date/number/text formatting; responsive mobile layouts; assess WCAG 2.2 AA. Test Amharic fonts, input, search, sorting and report rendering.
+Amharic-first with English support; Ethiopian and Gregorian calendar support; ETB initial base currency; local date/number/text formatting; responsive mobile layouts; assess WCAG 2.2 AA as a proposed target. Test Amharic fonts, input, search, sorting and report rendering. Calendar conversion, date authority, language review and accessibility target require Owner/stakeholder confirmation.
 
 ## 11. Proposed roles
-Potential categories: Owner/governing authority, school leadership, academic leadership, teachers, registrar, finance officer, cashier, HR, librarian, procurement/storekeeper, parent/guardian, age-appropriate student, system administrator and auditor. This is not an approved authority matrix; exact roles and permissions remain unresolved.
+Potential categories: Owner/governing authority, school leadership, academic leadership, teachers, registrar, finance officer, cashier, HR, librarian, procurement/storekeeper, parent/guardian, age-appropriate student, system administrator and auditor. This is not an approved authority matrix; exact roles, permissions, separation of duties and delegations remain unresolved.
 
 ## 12. Privacy, legal and compliance
 No legal compliance determination has been made. Identify applicable Ethiopian education, child protection, privacy/data protection, employment, finance, tax, records and electronic transaction requirements; obtain qualified review. Collect institutional registration, school approvals/licenses, policies, forms and regulator guidance. Do not claim compliance until requirements are mapped and verified.
+
+Define data classification, lawful purpose/authority, minimum collection, guardian access, disclosure, correction, retention, archival, deletion, incident response, vendor access and cross-border processing questions. These require qualified legal and institutional review; this document is not legal advice or a compliance certification.
 
 ## 13. Staged roadmap
 | Stage | Deliverable | Status |
@@ -88,17 +103,44 @@ No legal compliance determination has been made. Identify applicable Ethiopian e
 A3 requires explicit A1 approval/freeze, A2 completion/closure and separate Owner authorization. A5 is separately gated.
 
 ## 14. Deliverable register
-Expected A1 outputs: project charter/scope; institutional and operational assessment; stakeholder/responsibility map; functional and non-functional requirements; domain catalogue; data model; technical/technology assessment; security/privacy architecture; localization/accessibility requirements; integration/offline strategy; roadmap/acceptance criteria; unresolved decision/evidence register. Not all are complete in this reconstructed baseline.
+| A1 deliverable | Current state | Evidence / next action |
+|---|---|---|
+| Project charter and scope | PARTIAL | Reconstructed here; Owner review required |
+| Institutional assessment and authority map | PARTIAL | Obtain registration, governance and delegation records |
+| Academic and student workflows | PARTIAL | Validate calendars, grade structure, curriculum and policies |
+| Finance and cash workflows | PARTIAL | Obtain fee schedule, cashier/cash custody and approval policy |
+| Traceable requirements catalogue | PARTIAL | See companion register; validate with stakeholders |
+| Domain catalogue | PARTIAL | Proposed domains listed; boundaries and ownership TBD |
+| Data model | PARTIAL | Conceptual entity inventory only; relationships and retention TBD |
+| Technology options assessment | MISSING | Compare feasible stack/hosting options and operating cost |
+| Security/privacy threat assessment | PARTIAL | Initial control themes listed; formal threat and privacy review missing |
+| Localization/accessibility requirements | PARTIAL | Targets and test cases need confirmation |
+| Offline/integration strategy | MISSING | Assess use cases, connectivity and external dependencies |
+| Risk/assumption/dependency register | PARTIAL | Critical gaps listed; likelihood, impact, mitigation and owners to be completed |
+| Acceptance criteria and roadmap | PARTIAL | Stage gates recorded; measurable A1 exit evidence still required |
 
 ## 15. Unresolved decisions and evidence
 **Critical:** official registration/ownership; governing body and delegated authority; expense approval roles/thresholds/escalation; tuition/registration fee schedules; cashier/cash custody/receipt numbering/daily reconciliation; expense categories/budget procedure; payroll/accounting; privacy/retention/legal review.
 
 **Academic/operational:** KG levels; sections/class sizes; year and semester dates; Ethiopian calendar rules; subjects; grading/assessment weights/pass marks; promotion/repetition/transfer; attendance/discipline; parent access; staff structure.
 
-**Technical:** devices, connectivity, power; hosting and operating costs; backup/recovery objectives; offline priorities/conflict policy; document retention/export; integrations; users/concurrency/growth.
+**Technical:** devices, connectivity, power; hosting and operating costs; backup/recovery objectives; offline priorities/conflict policy; document retention/export; integrations; users/concurrency/growth; support and training model.
+
+Each critical gap needs a named institutional owner, evidence source, due point, impact and disposition. A2 must perform read-only reconciliation after A1 approval; it must not invent missing policy or alter operational systems.
 
 ## 16. A1 acceptance criteria
-Submit A1 for Owner approval only when scope/exclusions/stakeholders are documented; institutional, academic and financial workflows assessed; requirements uniquely identified and source-traceable; functional/non-functional requirements reviewed; domain and technical architecture documented; technology options and operating constraints evaluated; security/privacy/child-data/audit requirements specified; localization/accessibility specified; finance approval and cash-control gaps resolved or explicitly accepted as risks; assumptions, dependencies and risks visible; deliverables and acceptance criteria complete enough for an informed decision. Approval must be explicit, dated and version-specific.
+Submit A1 for Owner approval only when:
+- Scope, exclusions, stakeholders and operating assumptions are documented.
+- Institutional, academic and financial workflows have been assessed with relevant stakeholders.
+- Requirements have stable IDs, source/provenance, priority, acceptance criteria and traceability.
+- Functional and non-functional requirements are reviewed and measurable where applicable.
+- Domain boundaries, conceptual data architecture and technical options are documented.
+- Technology and hosting options are evaluated against affordability, local skills, security lifecycle and operational constraints.
+- Security, privacy, child-data, access-control and audit requirements have a documented threat/risk assessment.
+- Localization, calendar and accessibility requirements have testable acceptance criteria.
+- Finance approval, cash custody, receipt and reconciliation gaps are resolved or explicitly accepted as risks by the appropriate authority.
+- Assumptions, dependencies, risks, evidence gaps and decisions are visible with owners and dispositions.
+- Deliverables, exclusions, risks and acceptance criteria are complete enough for an informed, version-specific Owner decision.
 
 ## 17. Current disposition
-A1 **OPEN / IN PROGRESS**; A2 **NOT STARTED**; A3 **NOT AUTHORIZED**; A4/A5 **NOT STARTED**. Implementation and deployment have not been authorized. This reconstruction is not itself an A1 approval.
+A1 **OPEN / IN PROGRESS**; A2 **NOT STARTED**; A3 **NOT AUTHORIZED**; A4/A5 **NOT STARTED**. Implementation and deployment have not been authorized. This reconstruction and its companion requirements register are not A1 approval.
