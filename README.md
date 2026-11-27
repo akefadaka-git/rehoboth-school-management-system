@@ -22,6 +22,7 @@ Owner instruction dated 27 November 2026: keep this repository **Public during d
 - [A1 reconstruction note](docs/assessments/A1/RECONSTRUCTION-NOTE.md) — provenance and limitations
 - [A1 requirements register](docs/requirements/A1-REQUIREMENTS-REGISTER-v0.1.md) — preliminary traceable requirements and acceptance criteria
 - [A1 risk register](docs/assessments/A1/RISK-ASSUMPTION-DEPENDENCY-REGISTER-v0.1.md) — preliminary risks, assumptions and dependencies
+- [A1 open decisions and evidence register](docs/assessments/A1/A1-OPEN-DECISIONS-AND-EVIDENCE-RESOLUTION-REGISTER-v0.1.md) — institutional, financial, academic, privacy and technical resolution items
 - docs/architecture/, docs/decisions/ADRs/, and docs/roadmap/ — planned documentation areas; not yet populated
 
 No application code, migrations, production data, deployment or expenditure is authorized by the current documentation work.
