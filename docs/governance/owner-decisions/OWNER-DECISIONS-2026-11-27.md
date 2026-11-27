@@ -34,5 +34,12 @@
 **Current visibility:** Public.  
 **Control:** No visibility change before the post-deployment milestone; execute and verify as a separate action after deployment. Exclude/redact student, staff, personal, financial and confidential institutional information from public materials.
 
+## OD-RSMS-007 — Independent review is not a project requirement
+**Decision:** Independent review is not required at any stage of R-SMS, now or in the future. The Owner's explicit approval is the governing project approval; no independent person's approval or GitHub review approval is required by R-SMS governance.  
+**Status:** OWNER DECISION / ACTIVE.  
+**Governance effect:** Do not make independent review, external reviewer sign-off, or a non-Owner GitHub approval a prerequisite for A1 approval/freeze, A2 closure, A3 authorization, A4 verification, A5 deployment authorization, or other project decisions.  
+**Technical boundary:** This decision does not override GitHub permissions, repository rules, or branch-protection settings. Any platform restriction is a technical constraint, not an R-SMS governance requirement. Do not change repository settings or bypass platform controls without separate authorization.  
+**Approval authority:** The Owner retains final project approval and merge authorization, subject to applicable platform controls and the separately defined stage gates.
+
 ## Change control
 Never overwrite historical decisions. Supersede with a new linked decision containing ID, date, reason, authority, evidence and affected artifacts.
