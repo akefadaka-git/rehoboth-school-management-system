@@ -18,13 +18,13 @@ This register converts the remaining A1 institutional and operational gaps into 
 - **PROPOSED CONTROL:** a recommended system/control behavior, not an adopted school policy.
 - **BLOCKED:** cannot be closed from available evidence.
 
-No blank is to be completed by inference. Where an institutional document does not exist, record that fact and obtain an explicit Owner decision on the interim policy and its authority. Sensitive source documents must not be committed to this public repository; record only document title/type, issuing authority, date, version, verification outcome and a restricted evidence location/reference.
+No blank is to be completed by inference. The Owner has explicitly confirmed that Ethiopian Kale Heywot Church registration is sufficient as the institutional-authority basis for this A1 baseline and has instructed that no further church or academy registration, constitution, bylaws, or governance documents be requested from the Owner. Record this as an Owner-approved project basis, not as independent inspection or legal verification of a registration certificate. Do not infer specific officeholder powers, approval thresholds, or statutory permissions. Sensitive source documents must not be committed to this public repository.
 
 ## 2. Already established Owner decisions
 
 | ID | Confirmed direction | A1 treatment |
 |---|---|---|
-| OD-RSMS-001 | Koibe Kale Hiwot Church owns and operates Rehoboth Academy. | Owner-provided; supporting registration/governance records still required. |
+| OD-RSMS-001 / OD-RSMS-008 | Koibe Kale Hiwot Church owns and operates Rehoboth Academy; Owner confirms Ethiopian Kale Heywot Church registration is sufficient for the A1 institutional-authority basis, with no further document requests to the Owner. | OWNER-DISPOSITIONED for A1 project baseline; registration certificate not independently inspected. Do not infer specific powers or statutory permissions. |
 | OD-RSMS-002 | Budget and major expenses use a shared approval policy. | Policy direction confirmed; roles, limits and workflow remain open. |
 | OD-RSMS-003 | Academy offers Kindergarten and Grades 1–6. | Scope confirmed; KG levels, grade naming and sections remain open. |
 | OD-RSMS-004 | Academic year has two semesters. | Structure confirmed; calendar dates and academic rules remain open. |
@@ -36,9 +36,9 @@ No blank is to be completed by inference. Where an institutional document does n
 
 | ID | Resolution item | Required input/evidence | Closure test | Status |
 |---|---|---|---|---|
-| INST-01 | Confirm legal identity and registration of Koibe Kale Hiwot Church. | Registration certificate or authoritative registration record; issuer, number, date and current status. | Issuer and validity are checked; evidence reference is recorded without publishing sensitive scans. | BLOCKED — EVIDENCE REQUIRED |
-| INST-02 | Confirm legal/administrative status of Rehoboth Academy and its authority to operate. | School registration/license/approval, if applicable; issuing authority and validity. | Status and scope of authorization are recorded; any missing approval is explicit. | BLOCKED — EVIDENCE REQUIRED |
-| INST-03 | Confirm governing body and its powers. | Church constitution/bylaws, governing rules, minutes or equivalent authoritative instrument. | Governing body, appointment method, quorum/decision rules and relevant powers are mapped. | BLOCKED — EVIDENCE REQUIRED |
+| INST-01 | Establish the institutional-authority basis for the R-SMS A1 baseline. | Owner decision OD-RSMS-008: Ethiopian Kale Heywot Church registration is sufficient; no further documents are to be requested from the Owner. | Record Church ownership/operation as the Owner-approved project basis. Do not claim independent certificate inspection or infer unprovided powers/statutory permissions. | OWNER-DISPOSITIONED — A1 PROJECT BASIS |
+| INST-02 | Determine whether any separate school operating authorization is applicable. | Do not request further documents from the Owner. If this question is material to a later compliance assessment, use publicly available authoritative requirements or record the limitation/deferment. | No unsupported claim that Church registration proves every school-specific statutory permission. | DEFERRED — NO OWNER DOCUMENT REQUEST |
+| INST-03 | Record internal governing-body powers relevant to system workflows. | Use only powers explicitly established by Owner decisions; do not request further governing documents. Unspecified powers remain open/deferred rather than inferred. | No unverified governing-body composition, appointment, quorum or signing powers are encoded as fact. | OPEN — OWNER DECISION / DEFER AS NEEDED |
 | INST-04 | Identify named school leadership roles and reporting lines. | Current approved organization chart or Owner-confirmed role list. | Each operational role has a named position (not necessarily a personal name), supervisor and delegated responsibilities. | BLOCKED — OWNER INPUT |
 | INST-05 | Define delegated authority and signing powers. | Approved delegation/authority matrix or explicit Owner-approved interim matrix. | Each decision type has an accountable authority, delegate, limit, substitute and evidence requirement. | BLOCKED — OWNER DECISION |
 | INST-06 | Define who may approve policies and changes to school rules. | Governing instrument and Owner direction. | Policy approval, operational procedure approval and system configuration authority are distinguished. | BLOCKED — OWNER INPUT / EVIDENCE |
