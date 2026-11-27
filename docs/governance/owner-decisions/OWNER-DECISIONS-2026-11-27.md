@@ -43,3 +43,10 @@
 
 ## Change control
 Never overwrite historical decisions. Supersede with a new linked decision containing ID, date, reason, authority, evidence and affected artifacts.
+
+
+## OD-RSMS-008 — Church registration is sufficient for the A1 institutional-authority basis
+**Decision:** The Owner confirms that Ethiopian Kale Heywot Church registration is sufficient as the institutional-authority basis for the R-SMS A1 baseline. No further church or academy registration, constitution, bylaws, or governance documents are to be requested from the Owner for this A1 work.  
+**Status:** OWNER DECISION / ACTIVE.  
+**A1 treatment:** Record the Church as the owning and operating institution on the basis of this Owner direction. Do not represent the registration certificate as independently inspected or verified unless it is actually supplied and reviewed. Do not infer specific officeholder powers, approval thresholds, or statutory permissions from this decision. Any remaining system-role and workflow details must be handled through explicit Owner-approved project decisions or documented as deferred/open, without repeating document requests to the Owner.  
+**Boundary:** This is an Owner-approved project baseline decision; it is not an independent legal opinion or a claim that the Church registration alone satisfies every statutory requirement applicable to operating a school.
