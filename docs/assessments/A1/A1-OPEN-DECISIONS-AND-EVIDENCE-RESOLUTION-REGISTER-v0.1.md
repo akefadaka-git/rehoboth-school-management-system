@@ -72,7 +72,7 @@ The shared approval direction is recorded. The following details must be explici
 | CASH-07 | Define receipt content and payer identity. | Required student/payer details and acceptable proof of payment. | Receipt fields and duplicate-payment checks are agreed. | BLOCKED — STAKEHOLDER INPUT |
 | CASH-08 | Define arrears and hardship handling. | Due dates, installment rules, waiver authority, reminders and escalation. | Balance treatment and exceptions are approved; no automatic penalty is assumed. | BLOCKED — OWNER DECISION |
 
-**Proposed minimum cash workflow (subject to validation):** verify student and approved charge → receive ETB cash → issue controlled sequential receipt → post payment once to student ledger → provide payer receipt → close cashier session → compare cash counted, receipt sequence and ledger postings → record variance → independent authorized review of the close. “Independent review” here means an internal second-person cash reconciliation control, not an external project reviewer; the institution must decide whether and how this control is operationally feasible.
+**Proposed minimum cash workflow (subject to validation):** verify student and approved charge → receive ETB cash → issue controlled sequential receipt → post payment once to student ledger → provide payer receipt → close cashier session → compare cash counted, receipt sequence and ledger postings → record variance → review and sign-off by a separately authorized school role. “Independent review” here means an internal second-person cash reconciliation control, not an external project reviewer; the institution must decide whether and how this control is operationally feasible.
 
 ## 6. Academic and student operations
 
