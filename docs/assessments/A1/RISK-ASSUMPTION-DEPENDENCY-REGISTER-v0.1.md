@@ -1,0 +1,59 @@
+# A1 Preliminary Risk, Assumption and Dependency Register
+
+**Artifact:** R-SMS-RAD-001  
+**Version:** 0.1 — preliminary  
+**Date:** 27 November 2026  
+**Status:** PARTIAL — not approved or frozen
+
+Likelihood and impact are qualitative preliminary assessments, not measured probabilities. Risk owners below are proposed accountable roles, not confirmed appointments. The register must be validated with the institution.
+
+## Risks
+
+| ID | Risk | Likelihood | Impact | Proposed owner | Mitigation / evidence needed | Status |
+|---|---|---|---|---|---|---|
+| RSK-001 | Church institutional registration is incorrectly treated as a substitute for school-level registration/licensing/accreditation required for religious-institution-owned general-education schools, or unsupported officeholder powers are inferred. | Medium | Critical | Church governing authority | Apply OD-RSMS-008 as the A1 project-authority basis. Proclamation No. 1368/2025, Arts. 75(1) and 80(1)–(2), identifies separate school-level registration/licensing/recognition and two-year renewal requirements for religious-institution-owned schools. Track Academy-specific status as UNKNOWN until confirmed through an appropriate official route; do not request further documents from the Owner. | OPEN |
+| RSK-002 | Budget and major-expense approval roles or thresholds are unclear, allowing unauthorized commitments or payments. | High | Critical | Church governing authority | Approve written delegation matrix, monetary thresholds, segregation of duties, exceptions and audit requirements. | OPEN |
+| RSK-003 | Cash collection lacks clear cashier custody, receipt sequence, reconciliation and reversal controls. | High | High | School leadership / finance authority | Document current cash process; define cashier assignment, receipt issuance, daily close, variance escalation and reversal approval. | OPEN |
+| RSK-004 | Student/child personal information could be exposed through public repository content, weak access controls or unsafe exports. | Medium | Critical | School leadership / privacy responsible role | Keep real records and identifiers out of public Git; define data classification, access, retention, disclosure and incident controls. | OPEN |
+| RSK-005 | Requirements reconstructed from available project history may not match actual school workflows or policies. | High | High | Project Owner / school stakeholders | Reconcile against available non-sensitive operational evidence and stakeholder walkthroughs during authorized A2; do not request further institutional documents from the Owner. | OPEN |
+| RSK-006 | Academic calendar, KG structure, grading and promotion rules are not yet specified. | High | High | Academic leadership | Obtain approved calendar, curriculum, grading, assessment and promotion policies. | OPEN |
+| RSK-007 | Connectivity, power, device and local support constraints may make the selected architecture impractical. | Medium | High | School leadership / technical lead | Conduct site and user/device assessment; evaluate offline needs, hosting options and support capacity before technology selection. | OPEN |
+| RSK-008 | Unverified historical financial estimates may be mistaken for current or approved figures if published. | Medium | High | Finance authority / Project Owner | Exclude such figures from the public baseline until source, date, meaning and disclosure authorization are verified. | MITIGATED IN PUBLIC BASELINE; source verification pending |
+| RSK-009 | Backup, restore, incident response and vendor access arrangements may be inadequate for sensitive school records. | Medium | High | Technical lead / school leadership | Define data location, vendor access, RPO/RTO, backup encryption, restore testing and incident ownership before production. | OPEN |
+| RSK-010 | Scope expansion across many ERP domains may exceed available budget, skills and operational capacity. | High | High | Project Owner / school leadership | Prioritize by validated need, stage delivery, estimate total cost and require approval for scope changes. | OPEN |
+| RSK-011 | Academy-specific school registration/licensing/accreditation status is unknown; Church registration alone may not satisfy school-level requirements. | Medium | Critical | School leadership / responsible institutional authority | Track Proclamation No. 1368/2025, Arts. 75 and 80; confirm applicable regional education-office requirements through public/official channels before production operation. Do not request further documents from the Owner or claim current licensing status. | OPEN — PUBLIC-LAW DEPENDENCY |
+| RSK-012 | Student/child data processing may fail to meet the Personal Data Protection Proclamation's lawful-basis, minimization, retention, security or minor-specific requirements. | Medium | Critical | School leadership / privacy responsible role | Map Proclamation No. 1321/2024, Arts. 6, 7 and 11 into data inventory, lawful-basis, guardian authorization, retention, access and security controls before production; do not use minors' data for marketing or profiling. | OPEN — LEGAL DESIGN DEPENDENCY |
+| RSK-013 | Fee schedules or tuition increases may breach school-fee controls in Directive 992/2016, Art. 23, or its amendment. | Medium | High | School leadership / finance authority | Track registration-fee approval/cap, prohibition on in-year increases, parent notice/consultation for next-year increases, and 1037/2025 distinction between increases and harmonization. Obtain qualified applicability review before fee workflow is frozen. | OPEN — FINANCIAL COMPLIANCE DEPENDENCY |
+
+## Assumptions
+
+| ID | Assumption | Validation required | Status |
+|---|---|---|---|
+| ASM-001 | Current school processes are predominantly manual/paper-based. | Observe and inventory actual registers, forms and work practices. | UNVERIFIED |
+| ASM-002 | Planning enrollment range is approximately 100–300 students. | Confirm current student count and expected growth. | UNVERIFIED |
+| ASM-003 | Web/mobile-responsive access is a suitable initial delivery model. | Validate devices, connectivity, user skills and accessibility needs. | PROPOSAL |
+| ASM-004 | Amharic-first with English support is the desired interface direction. | Confirm terminology, translation review and reporting needs. | PROPOSAL |
+| ASM-005 | ETB is the initial reporting currency. | Confirm accounting and reporting policy. | PROPOSAL |
+
+## Dependencies
+
+| ID | Dependency | Needed before | Status |
+|---|---|---|---|
+| DEP-001 | Owner-approved institutional-authority basis (OD-RSMS-008) | A1 project baseline | OWNER-DISPOSITIONED; no further Owner document request |
+| DEP-002 | Delegated authority and budget/expense approval policy | Finance workflow design and A1 freeze | MISSING |
+| DEP-003 | Fee schedule and cash handling/reconciliation procedures | Finance requirements freeze | MISSING |
+| DEP-004 | Academic calendar, curriculum, grading and promotion policies | Academic requirements freeze | MISSING |
+| DEP-005 | Privacy, retention and applicable legal/regulatory review | A1 freeze / production design | MISSING |
+| DEP-006 | Device, connectivity, power and support assessment | Technology selection | MISSING |
+| DEP-007 | Approved technology/hosting options and operating-cost estimate | A1 architecture freeze | MISSING |
+| DEP-008 | School-level registration/licensing/accreditation status under Proclamation No. 1368/2025 | Compliance assessment / before production operation | LEGAL REQUIREMENT IDENTIFIED; ACADEMY-SPECIFIC STATUS UNKNOWN |
+| DEP-009 | Personal Data Protection Proclamation No. 1321/2024 requirements for student/child personal data | Privacy/security design and before production | LEGAL REQUIREMENTS IDENTIFIED; CONTROL DESIGN OPEN |
+| DEP-010 | Directive 992/2016 and Amendment 1037/2025 tuition-fee/registration-fee controls | Fee schedule and fee-change workflow design | LEGAL RULES IDENTIFIED; SCHOOL FEE POLICY/APPLICABILITY REVIEW OPEN |
+
+## Change and review controls
+
+- Assign a named owner and due date to each risk and dependency during institutional review.
+- Reassess likelihood, impact and residual exposure when evidence is obtained.
+- Do not mark a risk closed solely because a proposed control is documented; require evidence that the control is approved and effective.
+- Record risk acceptance by the authority empowered to accept it.
+- This register is a preliminary planning aid and does not authorize A2, implementation, expenditure or deployment.
