@@ -3,12 +3,16 @@
 **Date:** 27 November 2026  
 **Artifact:** R-SMS-A1-ARCH-001  
 **Source version referenced in chat:** 0.2 — Updated with Owner decisions  
-**Repository reconstruction revision:** 0.2-r1 — review corrections  
+**Repository reconstruction revision:** 0.2-r2 — Owner authority disposition and consistency corrections  
 **Status:** Reconstructed from available ChatGPT conversation history; not approved or frozen.
 
 The Owner clarified that the A1 documents were prepared in chat and had not been saved elsewhere. The retrievable prior-chat record confirms the artifact identifier, version 0.2, date, broad section coverage, Owner decisions and key constraints, but does not contain the complete original body. This repository copy is therefore a structured reconstruction, not an exact verbatim recovery.
 
 The 0.2-r1 repository revision adds traceability and review structure around the reconstructed baseline. It does not claim to reproduce wording that is unavailable from the original chat artifact.
+
+## Additional Owner decision recorded 28 November 2026
+
+OD-RSMS-008 records the Owner's explicit decision that Ethiopian Kale Heywot Church registration is sufficient as the institutional-authority basis for the R-SMS A1 project baseline. The Owner instructed that no further church or academy registration, constitution, bylaws or governance documents be requested. This is an Owner-approved project basis; the repository does not claim independent inspection of a registration certificate or infer individual officeholder powers or school-specific statutory permissions.
 
 ## Version history
 
@@ -17,6 +21,7 @@ The 0.2-r1 repository revision adds traceability and review structure around the
 | 0.1 | Earlier A1 draft referenced in project history | Acknowledged; complete wording unavailable; not fabricated |
 | 0.2 | Updated with Owner decisions, 27 Nov 2026 | Source version referenced in chat |
 | 0.2-r1 | Repository review corrections | Corrected README references; added preliminary requirements and risk registers; expanded workflow, architecture, privacy and acceptance sections; excluded unverified historical financial estimates from the public A1 baseline |
+| 0.2-r2 | Owner authority disposition, 28 Nov 2026 | Recorded OD-RSMS-008; aligned A1, requirements, risk/dependency and open-decision registers; no further Owner document requests |
 
 If original wording is later recovered, preserve it separately and reconcile differences. Do not silently replace this reconstruction.
 
