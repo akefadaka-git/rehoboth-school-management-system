@@ -28,3 +28,10 @@
 - Recorded the two-year license renewal requirement in Article 80(2); Academy-specific current status remains UNKNOWN / NOT VERIFIED.
 - Added minor-data processing requirements from Personal Data Protection Proclamation 1321/2024, Articles 6, 7 and 11, to the A1 baseline and requirements register.
 - No further documents requested from the Owner; no application code, migrations, production data, deployment, expenditure, merge or main-branch modification performed.
+
+
+## 2026-11-28 — School licensing directive detail
+- Reviewed the official Ministry of Justice PDF of Directive No. 992/2016 and Amendment No. 1037/2025.
+- Recorded teacher licensing, pre-primary/elementary leadership qualifications, premises/infrastructure criteria, license-renewal lead time/reporting, and registration-fee/tuition-increase controls in A1.
+- Added FIN-009, HR-001, and risk/dependency entries for fee-policy compliance; current Academy, staff, premises and fee compliance remains unknown.
+- No further documents requested from the Owner; no application code, migrations, production data, deployment, expenditure, merge or main-branch modification performed.
