@@ -12,7 +12,7 @@ This register makes candidate requirements traceable. It is not a claim that the
 
 | ID | Requirement | Source / class | Priority | Acceptance / verification criterion | Status |
 |---|---|---|---|---|---|
-| GOV-001 | Represent Koibe Kale Heywot Church as the Owner/operator relationship for Rehoboth Academy on the Owner-approved A1 project basis. | OD-RSMS-001 / OWNER | Must | Institutional record can represent the Owner-approved owner/operator relationship separately from school operating units; do not infer individual officeholder powers or school-specific statutory permissions. | PARTIAL |
+| GOV-001 | Represent Koibe Kale Heywot Church as the Owner/operator relationship for Rehoboth Academy on the Owner-approved A1 project basis. | OD-RSMS-001 / OWNER | Must | Institutional record can represent the Owner-approved owner/operator relationship separately from school operating units; do not infer individual officeholder powers. Track school-specific registration/licensing/accreditation separately under General Education Proclamation No. 1368/2025, Articles 75 and 80. | PARTIAL |
 | GOV-002 | Maintain a configurable organization, governance and delegated-authority model. | A1 context / PROPOSAL | Must | Roles, authority limits and delegations are documented, approved and versioned; no authority is inferred from a job title. | UNRESOLVED |
 | GOV-003 | Support shared approval policy for budgets and major expenses. | OD-RSMS-002 / OWNER | Must | Authorized roles, thresholds, workflow states, segregation rules and escalation are configured from an approved policy. | PARTIAL |
 | GOV-004 | Preserve approval decisions and changes in an auditable history. | Governance/security proposal | Must | Each approval records actor, role, timestamp, decision, reference and prior state; unauthorized alteration is prevented. | PROPOSAL |
@@ -49,10 +49,10 @@ This register makes candidate requirements traceable. It is not a claim that the
 |---|---|---|---|---|---|
 | SEC-001 | Enforce role- and responsibility-based access, scoped to institution, class and student/guardian relationship where applicable. | Security proposal | Must | Access tests demonstrate users can access only authorized records and functions. | PROPOSAL |
 | SEC-002 | Separate technical administration from financial approval authority. | Governance/security proposal | Must | System administrator privileges do not grant budget, expense or payment approval permissions by default. | PROPOSAL |
-| SEC-003 | Protect child/student personal data and restrict disclosure. | Privacy/security proposal | Must | Data classification, minimum access, retention, export and disclosure rules are documented and tested before production. | UNRESOLVED |
+| SEC-003 | Protect child/student personal data and restrict disclosure. | Personal Data Protection Proclamation No. 1321/2024, Arts. 6, 7 and 11 | Must | Document lawful purpose and basis, data minimization, accuracy, retention limitation, integrity/confidentiality/security, data sovereignty, minors' best interests, parent/guardian/tutor authorization or vital-interest basis, reasonable age/authorization verification, and prohibition on marketing/profiling minors; test controls before production. | LEGAL REQUIREMENTS IDENTIFIED; DESIGN UNRESOLVED |
 | SEC-004 | Record security-relevant and financial actions in tamper-evident audit history. | Security proposal | Must | Audit events identify actor, action, target, timestamp and outcome; privileged access and retention are controlled. | PROPOSAL |
 | SEC-005 | Define authentication, session, credential recovery and access revocation controls. | Security proposal | Must | Security design specifies controls and tests for account lifecycle, session expiry, recovery and prompt revocation. | UNRESOLVED |
-| SEC-006 | Define backup, restore, incident response and recovery objectives. | Operational resilience proposal | Must | Approved RPO/RTO, backup schedule, restore test evidence and incident ownership are documented before production. | UNRESOLVED |
+| SEC-006 | Define backup, restore, incident response and recovery objectives. | Operational resilience proposal | Must | Approved RPO/RTO, backup schedule, restore test evidence and incident ownership are documented before production. | UNRESOLVED |\n| SEC-007 | Track school-level registration, licensing and accreditation separately from the Church's institutional registration. | General Education Proclamation No. 1368/2025, Arts. 21(1)(h), 75(1), 80(1)–(2) | Must | System governance/compliance records can record issuing regional education office, school license/recognition reference, issue/expiry dates, renewal due date and status; no current Academy license status is assumed. | LEGAL REQUIREMENT IDENTIFIED; ACADEMY STATUS UNKNOWN |
 
 ## 5. Platform, localization and operations requirements
 
@@ -120,7 +120,7 @@ Requester submits purpose, category, amount and supporting evidence → delegate
 
 ## 10. A1 gap summary
 
-**Critical unresolved:** internal role assignments and delegations; budget/expense approval matrix; tuition/fee schedules; cashier assignment, cash custody and reconciliation; student-data privacy/retention and school-specific legal review. The institutional-authority basis is Owner-dispositioned under OD-RSMS-008.
+**Critical unresolved:** Academy-specific school registration/licensing/accreditation status under Proclamation 1368/2025; internal role assignments and delegations; budget/expense approval matrix; tuition/fee schedules; cashier assignment, cash custody and reconciliation; student-data privacy/retention design and qualified legal review. The Church institutional-authority basis is Owner-dispositioned under OD-RSMS-008.
 
 **Other unresolved:** academic calendar dates, KG structure, sections, subjects, grading, promotion rules, staffing, devices/connectivity, technology/hosting options, capacity targets, backup/recovery and support model.
 
