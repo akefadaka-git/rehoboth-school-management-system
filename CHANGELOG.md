@@ -12,3 +12,11 @@
 - Recorded stage status: A1 OPEN; A2 NOT STARTED; A3 NOT AUTHORIZED; A4/A5 NOT STARTED.
 - No application code, migrations, production data or deployment artifacts added.
 - A1 v0.1 is referenced in chat history, but its complete original text was not recoverable; no verbatim copy is claimed.
+
+
+## 2026-11-28 — Owner authority disposition
+- Recorded OD-RSMS-008: Ethiopian Kale Heywot Church registration is sufficient as the institutional-authority basis for the A1 project baseline.
+- Recorded the Owner instruction not to request further church or academy registration, constitution, bylaws or governance documents.
+- Aligned the A1 baseline, requirements register, risk/dependency register, open-decision register, reconstruction note and stage-gate status with the decision.
+- Clarified that this is an Owner-approved project basis, not independent certificate verification or a legal compliance determination.
+- No application code, migrations, production data, deployment, expenditure, merge or main-branch modification performed.
