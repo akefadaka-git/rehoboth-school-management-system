@@ -4,7 +4,7 @@
 **Version:** 0.1 — preliminary reconstruction  
 **Date:** 27 November 2026  
 **Status:** PARTIAL — for A1 review; not approved or frozen  
-**Source basis:** Retrievable ChatGPT project history and Owner decisions recorded in OWNER-DECISIONS-2026-11-27.md. No institutional source documents have yet been reconciled.
+**Source basis:** Retrievable ChatGPT project history and Owner decisions recorded in OWNER-DECISIONS-2026-11-27.md. OD-RSMS-008 confirms Ethiopian Kale Heywot Church registration as sufficient for the A1 institutional-authority project basis; no claim is made that a certificate was independently inspected.
 
 This register makes candidate requirements traceable. It is not a claim that the workflows, policies or acceptance criteria have been validated with school personnel. Requirements marked OWNER are based on explicit Owner statements; PROPOSAL items require review. Priority: Must = foundational control/capability for the intended system; Should = important but scope/sequence requires confirmation; TBD = cannot be prioritized until evidence is obtained.
 
@@ -12,7 +12,7 @@ This register makes candidate requirements traceable. It is not a claim that the
 
 | ID | Requirement | Source / class | Priority | Acceptance / verification criterion | Status |
 |---|---|---|---|---|---|
-| GOV-001 | Represent Koibe Kale Hiwot Church as the Owner/operator relationship for Rehoboth Academy. | OD-RSMS-001 / OWNER | Must | Institutional record can represent legal owner/operator separately from school operating units; authoritative documents reconciled before production setup. | PARTIAL |
+| GOV-001 | Represent Koibe Kale Heywot Church as the Owner/operator relationship for Rehoboth Academy on the Owner-approved A1 project basis. | OD-RSMS-001 / OWNER | Must | Institutional record can represent the Owner-approved owner/operator relationship separately from school operating units; do not infer individual officeholder powers or school-specific statutory permissions. | PARTIAL |
 | GOV-002 | Maintain a configurable organization, governance and delegated-authority model. | A1 context / PROPOSAL | Must | Roles, authority limits and delegations are documented, approved and versioned; no authority is inferred from a job title. | UNRESOLVED |
 | GOV-003 | Support shared approval policy for budgets and major expenses. | OD-RSMS-002 / OWNER | Must | Authorized roles, thresholds, workflow states, segregation rules and escalation are configured from an approved policy. | PARTIAL |
 | GOV-004 | Preserve approval decisions and changes in an auditable history. | Governance/security proposal | Must | Each approval records actor, role, timestamp, decision, reference and prior state; unauthorized alteration is prevented. | PROPOSAL |
@@ -70,7 +70,7 @@ This register makes candidate requirements traceable. It is not a claim that the
 
 | Stakeholder | Candidate responsibilities | Authority status |
 |---|---|---|
-| Church Owner / governing authority | Institutional ownership, governance and delegated policy | Owner/operator relationship recorded; governing instruments and authority limits unverified |
+| Church Owner / governing authority | Institutional ownership, governance and delegated policy | Owner-approved institutional basis recorded under OD-RSMS-008; individual role/delegation limits remain unresolved |
 | School leadership | Daily school administration and operational oversight | Exact roles and delegations TBD |
 | Academic leadership | Calendar, curriculum, assessment and promotion oversight | TBD |
 | Registrar / admissions | Student records, enrollment and transfers | Candidate role only |
@@ -115,12 +115,12 @@ Requester submits purpose, category, amount and supporting evidence → delegate
 - Every requirement must cite an Owner decision, institutional evidence, stakeholder-confirmed need or clearly labelled proposal.
 - A requirement is not approved merely because it appears in this register.
 - Changes require a dated rationale, source, impact assessment and approval record.
-- A2 must reconcile this register against authoritative institutional documents and actual workflows without modifying production systems.
+- A2 must reconcile this register against available evidence and actual workflows without modifying production systems; do not request further institutional documents from the Owner.
 - A1 approval requires explicit Owner approval of a versioned baseline; this register remains preliminary until then.
 
 ## 10. A1 gap summary
 
-**Critical unresolved:** governing authority and delegations; budget/expense approval matrix; tuition/fee schedules; cashier assignment, cash custody and reconciliation; official institutional evidence; student-data privacy/retention and legal review.
+**Critical unresolved:** internal role assignments and delegations; budget/expense approval matrix; tuition/fee schedules; cashier assignment, cash custody and reconciliation; student-data privacy/retention and school-specific legal review. The institutional-authority basis is Owner-dispositioned under OD-RSMS-008.
 
 **Other unresolved:** academic calendar dates, KG structure, sections, subjects, grading, promotion rules, staffing, devices/connectivity, technology/hosting options, capacity targets, backup/recovery and support model.
 
