@@ -23,6 +23,7 @@ Likelihood and impact are qualitative preliminary assessments, not measured prob
 | RSK-010 | Scope expansion across many ERP domains may exceed available budget, skills and operational capacity. | High | High | Project Owner / school leadership | Prioritize by validated need, stage delivery, estimate total cost and require approval for scope changes. | OPEN |
 | RSK-011 | Academy-specific school registration/licensing/accreditation status is unknown; Church registration alone may not satisfy school-level requirements. | Medium | Critical | School leadership / responsible institutional authority | Track Proclamation No. 1368/2025, Arts. 75 and 80; confirm applicable regional education-office requirements through public/official channels before production operation. Do not request further documents from the Owner or claim current licensing status. | OPEN — PUBLIC-LAW DEPENDENCY |
 | RSK-012 | Student/child data processing may fail to meet the Personal Data Protection Proclamation's lawful-basis, minimization, retention, security or minor-specific requirements. | Medium | Critical | School leadership / privacy responsible role | Map Proclamation No. 1321/2024, Arts. 6, 7 and 11 into data inventory, lawful-basis, guardian authorization, retention, access and security controls before production; do not use minors' data for marketing or profiling. | OPEN — LEGAL DESIGN DEPENDENCY |
+| RSK-013 | Fee schedules or tuition increases may breach school-fee controls in Directive 992/2016, Art. 23, or its amendment. | Medium | High | School leadership / finance authority | Track registration-fee approval/cap, prohibition on in-year increases, parent notice/consultation for next-year increases, and 1037/2025 distinction between increases and harmonization. Obtain qualified applicability review before fee workflow is frozen. | OPEN — FINANCIAL COMPLIANCE DEPENDENCY |
 
 ## Assumptions
 
@@ -47,6 +48,7 @@ Likelihood and impact are qualitative preliminary assessments, not measured prob
 | DEP-007 | Approved technology/hosting options and operating-cost estimate | A1 architecture freeze | MISSING |
 | DEP-008 | School-level registration/licensing/accreditation status under Proclamation No. 1368/2025 | Compliance assessment / before production operation | LEGAL REQUIREMENT IDENTIFIED; ACADEMY-SPECIFIC STATUS UNKNOWN |
 | DEP-009 | Personal Data Protection Proclamation No. 1321/2024 requirements for student/child personal data | Privacy/security design and before production | LEGAL REQUIREMENTS IDENTIFIED; CONTROL DESIGN OPEN |
+| DEP-010 | Directive 992/2016 and Amendment 1037/2025 tuition-fee/registration-fee controls | Fee schedule and fee-change workflow design | LEGAL RULES IDENTIFIED; SCHOOL FEE POLICY/APPLICABILITY REVIEW OPEN |
 
 ## Change and review controls
 
