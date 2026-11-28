@@ -16,9 +16,9 @@ Initial institution: Koybe Rehoboth Academy. Scope: full school ERP. Proposed ac
 Excluded from this A1 activity: application implementation, migrations, production data import, hosting/deployment, expenditure, paid-service commitment and operational use. The public repository must contain documentation only and must not contain real student, parent, staff, credential, account or confidential operational data.
 
 ## 3. Institutional assessment
-**OWNER DECISION (27 Nov 2026):** Koibe Kale Hiwot Church owns and operates the academy. Official registration, governing instruments, ownership records and delegated authority documents remain to be collected. Current operations are described as manual/paper-based. Map actual forms, registers, approval records and retention practices before automation. Enrollment range is a planning estimate, not a verified count. Organizational chart and authority matrix remain unresolved.
+**OWNER DECISIONS (27–28 Nov 2026):** Koibe Kale Heywot Church owns and operates the academy. The Owner confirms that Ethiopian Kale Heywot Church registration is sufficient as the institutional-authority basis for this A1 project baseline; no further church or academy registration, constitution, bylaws or governance documents are to be requested from the Owner. This is an Owner-approved project basis, not a claim that a registration certificate was independently inspected or that all school-specific statutory permissions have been verified. Do not infer specific officeholder powers or approval thresholds. Current operations are described as manual/paper-based. Map actual forms, registers, approval records and retention practices before automation. Enrollment range is a planning estimate, not a verified count. Operational role assignments and authority matrix remain unresolved.
 
-The system must distinguish institutional ownership, school operation, governance, delegated approval authority and technical administration. The legal and operational relationship must be confirmed from authoritative documents before production configuration. Candidate stakeholders and responsibilities are listed in the requirements register; they are not an approved organization chart.
+The system must distinguish institutional ownership, school operation, governance, delegated approval authority and technical administration. The institutional-authority basis for this A1 project baseline is the explicit Owner decision recorded as OD-RSMS-008. This does not establish unprovided individual officeholder powers, internal delegation limits or school-specific statutory permissions. Candidate stakeholders and responsibilities are listed in the requirements register; they are not an approved organization chart.
 
 ## 4. Academic assessment
 **OWNER DECISION:** Academy offers Kindergarten and Grades 1–6.  
@@ -87,7 +87,7 @@ Amharic-first with English support; Ethiopian and Gregorian calendar support; ET
 Potential categories: Owner/governing authority, school leadership, academic leadership, teachers, registrar, finance officer, cashier, HR, librarian, procurement/storekeeper, parent/guardian, age-appropriate student, system administrator and auditor. This is not an approved authority matrix; exact roles, permissions, separation of duties and delegations remain unresolved.
 
 ## 12. Privacy, legal and compliance
-No legal compliance determination has been made. Identify applicable Ethiopian education, child protection, privacy/data protection, employment, finance, tax, records and electronic transaction requirements; obtain qualified review. Collect institutional registration, school approvals/licenses, policies, forms and regulator guidance. Do not claim compliance until requirements are mapped and verified.
+No legal compliance determination has been made. Identify applicable Ethiopian education, child protection, privacy/data protection, employment, finance, tax, records and electronic transaction requirements; obtain qualified review. Use publicly available authoritative Ethiopian legal/regulatory sources and qualified review to identify applicable school-specific obligations; do not request additional institutional documents from the Owner. Record any requirement that cannot be verified as an explicit limitation. Do not claim compliance until applicable requirements are mapped and verified.
 
 Define data classification, lawful purpose/authority, minimum collection, guardian access, disclosure, correction, retention, archival, deletion, incident response, vendor access and cross-border processing questions. These require qualified legal and institutional review; this document is not legal advice or a compliance certification.
 
@@ -106,7 +106,7 @@ A3 requires explicit A1 approval/freeze, A2 completion/closure and separate Owne
 | A1 deliverable | Current state | Evidence / next action |
 |---|---|---|
 | Project charter and scope | PARTIAL | Reconstructed here; Owner review required |
-| Institutional assessment and authority map | PARTIAL | Obtain registration, governance and delegation records |
+| Institutional assessment and authority map | PARTIAL | Owner-approved institutional basis recorded; individual role/delegation details remain unresolved and must not be inferred |
 | Academic and student workflows | PARTIAL | Validate calendars, grade structure, curriculum and policies |
 | Finance and cash workflows | PARTIAL | Obtain fee schedule, cashier/cash custody and approval policy |
 | Traceable requirements catalogue | PARTIAL | See companion register; validate with stakeholders |
@@ -120,13 +120,13 @@ A3 requires explicit A1 approval/freeze, A2 completion/closure and separate Owne
 | Acceptance criteria and roadmap | PARTIAL | Stage gates recorded; measurable A1 exit evidence still required |
 
 ## 15. Unresolved decisions and evidence
-**Critical:** official registration/ownership; governing body and delegated authority; expense approval roles/thresholds/escalation; tuition/registration fee schedules; cashier/cash custody/receipt numbering/daily reconciliation; expense categories/budget procedure; payroll/accounting; privacy/retention/legal review.
+**Critical:** operational role assignments and delegated authority; expense approval roles/thresholds/escalation; tuition/registration fee schedules; cashier/cash custody/receipt numbering/daily reconciliation; expense categories/budget procedure; payroll/accounting; privacy/retention/legal review. The institutional-authority basis is Owner-dispositioned under OD-RSMS-008; do not reopen it by requesting more documents.
 
 **Academic/operational:** KG levels; sections/class sizes; year and semester dates; Ethiopian calendar rules; subjects; grading/assessment weights/pass marks; promotion/repetition/transfer; attendance/discipline; parent access; staff structure.
 
 **Technical:** devices, connectivity, power; hosting and operating costs; backup/recovery objectives; offline priorities/conflict policy; document retention/export; integrations; users/concurrency/growth; support and training model.
 
-Each critical gap needs a named institutional owner, evidence source, due point, impact and disposition. A2 must perform read-only reconciliation after A1 approval; it must not invent missing policy or alter operational systems.
+Each critical gap needs a responsible role, evidence source where applicable, due point, impact and disposition. A2 must perform read-only reconciliation after A1 approval; it must not invent missing policy or alter operational systems. Do not make additional institutional-document requests to the Owner; unresolved internal operating rules must be recorded for Owner decision or explicitly deferred.
 
 ## 16. A1 acceptance criteria
 Submit A1 for Owner approval only when:
