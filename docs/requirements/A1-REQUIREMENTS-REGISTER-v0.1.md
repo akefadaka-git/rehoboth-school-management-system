@@ -42,6 +42,7 @@ This register makes candidate requirements traceable. It is not a claim that the
 | FIN-006 | Implement shared budget and major-expense approval workflow only after authority rules are documented. | OD-RSMS-002 / OWNER | Must | Request, review, approval, payment and exception roles/limits are approved and segregated before configuration; system blocks unauthorized approvals. | UNRESOLVED |
 | FIN-007 | Support payroll and accounting only to the extent confirmed by institutional requirements. | A1 scope / PROPOSAL | TBD | Approved payroll/accounting scope, chart of accounts, periods and statutory requirements are documented before design freeze. | UNRESOLVED |
 | FIN-008 | Do not enable bank or online fee collection without a separate Owner decision. | OD-RSMS-005 / OWNER | Must | No digital payment integration is configured or exposed until a new recorded approval and security review exist. | OWNER-RECORDED |
+| FIN-009 | Apply applicable registration-fee and tuition-increase controls to school fee schedules and changes. | Directive 992/2016, Art. 23; Amendment 1037/2025 | Must | Fee setup tracks registration-fee approval/cap, prevents increases after the academic year starts, supports required advance parent notice/consultation for increases, and distinguishes increases from harmonization. Applicability must be reviewed before production. | LEGAL REQUIREMENTS IDENTIFIED; POLICY MAPPING OPEN |
 
 ## 4. Identity, privacy and security requirements
 
@@ -84,6 +85,12 @@ This register makes candidate requirements traceable. It is not a claim that the
 | Auditor/reviewer | Read-only oversight according to approved mandate | Mandate and scope TBD |
 
 This is a discovery model, not an approved organization chart or delegation of authority.
+
+### Staff credential and leadership qualification requirements
+
+| ID | Requirement | Source | Acceptance / verification criterion | Status |
+|---|---|---|---|---|
+| HR-001 | Track teaching and school-leadership credentials required by applicable education rules. | Directive 992/2016, Arts. 10–11 | HR records can track role, qualification, professional license, issuing authority and validity; pre-primary coordinator and elementary principal qualification rules are represented. Current staff credential status is not assumed. | LEGAL REQUIREMENTS IDENTIFIED; STAFF STATUS UNKNOWN |
 
 ## 7. Core workflow outlines — preliminary
 
