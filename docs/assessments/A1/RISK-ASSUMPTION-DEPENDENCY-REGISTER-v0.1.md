@@ -11,11 +11,11 @@ Likelihood and impact are qualitative preliminary assessments, not measured prob
 
 | ID | Risk | Likelihood | Impact | Proposed owner | Mitigation / evidence needed | Status |
 |---|---|---|---|---|---|---|
-| RSK-001 | Legal ownership, school registration or operating authority differs from the current Owner-provided description or is not adequately documented. | Medium | Critical | Church governing authority | Obtain and reconcile registration, governing instruments, licenses and operating records before production setup. | OPEN |
+| RSK-001 | Owner-approved institutional-authority basis is misunderstood as proof of every school-specific statutory permission, or unsupported officeholder powers are inferred. | Medium | Critical | Church governing authority | Apply OD-RSMS-008 as the A1 project-authority basis; do not request further documents from the Owner. Separately assess publicly available school-specific statutory requirements and record limitations without asserting unverified compliance. | OPEN |
 | RSK-002 | Budget and major-expense approval roles or thresholds are unclear, allowing unauthorized commitments or payments. | High | Critical | Church governing authority | Approve written delegation matrix, monetary thresholds, segregation of duties, exceptions and audit requirements. | OPEN |
 | RSK-003 | Cash collection lacks clear cashier custody, receipt sequence, reconciliation and reversal controls. | High | High | School leadership / finance authority | Document current cash process; define cashier assignment, receipt issuance, daily close, variance escalation and reversal approval. | OPEN |
 | RSK-004 | Student/child personal information could be exposed through public repository content, weak access controls or unsafe exports. | Medium | Critical | School leadership / privacy responsible role | Keep real records and identifiers out of public Git; define data classification, access, retention, disclosure and incident controls. | OPEN |
-| RSK-005 | Requirements inferred from incomplete chat history may not match actual school workflows or policies. | High | High | Project Owner / school stakeholders | Validate requirements against institutional documents, actual forms/registers and stakeholder walkthroughs during authorized A2. | OPEN |
+| RSK-005 | Requirements reconstructed from available project history may not match actual school workflows or policies. | High | High | Project Owner / school stakeholders | Reconcile against available non-sensitive operational evidence and stakeholder walkthroughs during authorized A2; do not request further institutional documents from the Owner. | OPEN |
 | RSK-006 | Academic calendar, KG structure, grading and promotion rules are not yet specified. | High | High | Academic leadership | Obtain approved calendar, curriculum, grading, assessment and promotion policies. | OPEN |
 | RSK-007 | Connectivity, power, device and local support constraints may make the selected architecture impractical. | Medium | High | School leadership / technical lead | Conduct site and user/device assessment; evaluate offline needs, hosting options and support capacity before technology selection. | OPEN |
 | RSK-008 | Unverified historical financial estimates may be mistaken for current or approved figures if published. | Medium | High | Finance authority / Project Owner | Exclude such figures from the public baseline until source, date, meaning and disclosure authorization are verified. | MITIGATED IN PUBLIC BASELINE; source verification pending |
@@ -36,7 +36,7 @@ Likelihood and impact are qualitative preliminary assessments, not measured prob
 
 | ID | Dependency | Needed before | Status |
 |---|---|---|---|
-| DEP-001 | Institutional registration, licenses and governing instruments | A1 freeze / A2 reconciliation | MISSING |
+| DEP-001 | Owner-approved institutional-authority basis (OD-RSMS-008) | A1 project baseline | OWNER-DISPOSITIONED; no further Owner document request |
 | DEP-002 | Delegated authority and budget/expense approval policy | Finance workflow design and A1 freeze | MISSING |
 | DEP-003 | Fee schedule and cash handling/reconciliation procedures | Finance requirements freeze | MISSING |
 | DEP-004 | Academic calendar, curriculum, grading and promotion policies | Academic requirements freeze | MISSING |
